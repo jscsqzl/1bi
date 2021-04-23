@@ -111,7 +111,7 @@ let onestroke = new OneStroke(
 // 兼容大屏幕适配
 function fitEaselInfo() { 
 	onestroke.viewLeft = document.querySelector(".wrapper").getBoundingClientRect().left; 
-	onestroke.ratio = 375 / Math.min(document.body.clientWidth, 540); 
+	onestroke.ratio = 375 / Math.min(document.body.clientWidth, 500); 
 }
 window.addEventListener("resize", fitEaselInfo); 
 
