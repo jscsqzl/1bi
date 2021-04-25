@@ -21,8 +21,8 @@
 			<div class="game-back" id="gameBack"></div>
 			<canvas id="easel" width="375" height="500" class="easel"></canvas>
 			<div class="game-control">
-				<div class="game-control-reset">☹</div>
-				<div class="game-control-rollback">←</div>
+				<div class="game-control-reset">重新开始 ☹</div>
+				<div class="game-control-rollback">退回 ←</div>
 			</div>
 		</div>
 	</div>
@@ -111,7 +111,7 @@ let onestroke = new OneStroke(
 // 兼容大屏幕适配
 function fitEaselInfo() { 
 	onestroke.viewLeft = document.querySelector(".wrapper").getBoundingClientRect().left; 
-	onestroke.ratio = 375 / Math.min(document.body.clientWidth, 500); 
+	onestroke.ratio = 375 / Math.min(document.body.clientWidth, 540); 
 }
 window.addEventListener("resize", fitEaselInfo); 
 
